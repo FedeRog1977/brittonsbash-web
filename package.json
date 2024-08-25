@@ -1,9 +1,9 @@
 {
   "name": "root",
-  "description": "This is the root package of brittonsbash, which orchestrates all other packages",
+  "description": "Root package of brittonsbash, which orchestrates all child packages",
   "private": true,
   "scripts": {
-    "bootstrap": "husky install && pnpm install",
+    "bootstrap": "pnpm install",
     "serial": "pnpm --recursive --stream --filter",
     "serial:all": "pnpm --recursive --stream",
     "parallel": "pnpm --recursive --stream --parallel --filter",
