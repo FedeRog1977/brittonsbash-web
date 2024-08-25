@@ -1,0 +1,23 @@
+{
+  "name": "@config/prettier",
+  "description": "Prettier configuration",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.cjs"
+  },
+  "scripts": {
+    "clean:hard": "rimraf ./node_modules",
+    "format:check": "prettier --ignore-path ./.gitignore --check .",
+    "format:fix": "prettier --ignore-path ./.gitignore --list-different --write .",
+    "lint": "eslint ./src"
+  },
+  "devDependencies": {
+    "@config/eslint": "0.0.0",
+    "eslint": "8.41.0",
+    "prettier": "2.8.8",
+    "rimraf": "5.0.1"
+  },
+  "prettier": "./src/index.cjs"
+}

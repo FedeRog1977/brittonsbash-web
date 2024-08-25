@@ -1,0 +1,30 @@
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  pnpm:
+    specifier: 8.6.0
+    version: 8.6.0
+
+devDependencies:
+  husky:
+    specifier: 8.0.3
+    version: 8.0.3
+
+packages:
+
+  /husky@8.0.3:
+    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
+
+  /pnpm@8.6.0:
+    resolution: {integrity: sha512-uMaWGXlvG+m5NIJaR4JEEenChbg+1AP4zVpqs4PEcZg4uH+lXMTd/X/lirKZA+TC0w0d+++y3btINcwyKsuwAA==}
+    engines: {node: '>=16.14'}
+    deprecated: This version contains a regression. Upgrade to v8.6.2 or newer
+    hasBin: true
+    dev: false
