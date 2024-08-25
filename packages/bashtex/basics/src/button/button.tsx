@@ -1,6 +1,6 @@
 import styles from './button.module.scss.js';
 import cx from 'classnames';
-import { toUpperCase } from '../../../../utils';
+import { toUpperCase } from '@utils/helpers';
 import { FC, ReactElement } from 'react';
 import { TextStyle, Url } from '../reference/index.js';
 import { Flex } from '../flex/flex.js';

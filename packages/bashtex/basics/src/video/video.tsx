@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { isMobile } from '../../../../utils';
+import { isMobile } from '@utils/helpers';
 
 export type VideoProps = {
   video: string;

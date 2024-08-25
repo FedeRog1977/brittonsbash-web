@@ -65,6 +65,6 @@ root.render(
       </Route>
       <Route path="*" element={<ErrorPage />} />
     </Routes> */}
-    <Typography variant="t1">Hello World</Typography>
+    <Typography variant="t1">Hello World!</Typography>
   </HashRouter>,
 );

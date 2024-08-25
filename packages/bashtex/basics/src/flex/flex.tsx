@@ -3,7 +3,7 @@ import { FC } from 'react';
 import { Horizontal } from './types/horizontal.js';
 import { Vertical } from './types/vertical.js';
 import styles from './flex.module.scss.js';
-import { toUpperCase } from '../../../../utils';
+import { toUpperCase } from '@utils/helpers';
 import { getResponsiveSpacingClassNames } from '../reference/index.js';
 
 type FlexProps = Horizontal | Vertical;

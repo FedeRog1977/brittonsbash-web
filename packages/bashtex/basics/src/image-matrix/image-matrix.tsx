@@ -1,4 +1,4 @@
-import { generateUniqueKey, useShowElement } from '../../../../utils';
+import { generateUniqueKey, useShowElement } from '@utils/helpers';
 import styles from './image-matrix.module.scss.js';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { ColumnSpan, Img } from '../reference/index.js';

@@ -7,7 +7,7 @@ import {
   faExchange,
 } from '@fortawesome/free-solid-svg-icons';
 import styles from './image-slider.module.scss.js';
-import { generateUniqueKey, isMobile } from '../../../../utils';
+import { generateUniqueKey, isMobile } from '@utils/helpers';
 import { Img } from '../reference/index.js';
 import { Typography } from '../typography/typography.js';
 

@@ -4,9 +4,12 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "export": {
+    "./*": "./dist/*/index.js"
+  },
   "scripts": {
     "build": "tsc",
-    "clean": "rimraf ./build && rimraf ./node_modules",
+    "clean": "rimraf ./dist && rimraf ./node_modules",
     "eject": "react-scripts eject",
     "format:check": "prettier --ignore-path ./.gitignore --check .",
     "format:repair": "prettier --ignore-path ./.gitignore --list-different --write .",

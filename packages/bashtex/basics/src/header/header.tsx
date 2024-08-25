@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import styles from './header.module.scss.js';
-import { isMobile, useShowElement } from '../../../../utils';
+import { isMobile, useShowElement } from '@utils/helpers';
 import { Flex } from '../flex/flex.js';
 
 export type HeaderMobileProps = {

@@ -1,23 +1,26 @@
 {
-  "homepage": "http://brittonsbash.com",
-  "name": "@applications/brittonsbash",
-  "description": "Deployable web application of brittonsbash",
+  "name": "@utils/helpers",
+  "description": "Helper utility functions",
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "export": {
+    ".": "./dist/index.js"
+  },
   "scripts": {
     "build": "tsc",
-    "clean": "rimraf ./build && rimraf ./node_modules",
-    "deploy": "gh-pages -d build",
+    "clean": "rimraf ./dist && rimraf ./node_modules",
     "eject": "react-scripts eject",
     "format:check": "prettier --ignore-path ./.gitignore --check .",
     "format:repair": "prettier --ignore-path ./.gitignore --list-different --write .",
     "lint": "eslint ./src",
-    "predeploy": "npm run build",
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "test": "react-scripts test"
   },
   "dependencies": {
-    "@bashtex/basics": "0.0.0",
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.5.0",
@@ -30,21 +33,8 @@
     "@types/react": "18.2.67",
     "@types/react-dom": "18.3.0",
     "eslint": "8.41.0",
-    "gh-pages": "^5.0.0",
     "prettier": "2.8.8",
     "rimraf": "5.0.1"
   },
-  "prettier": "@config/prettier",
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "prettier": "@config/prettier"
 }

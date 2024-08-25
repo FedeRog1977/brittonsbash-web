@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { generateUniqueKey, useShowElement } from '../../../../utils';
+import { generateUniqueKey, useShowElement } from '@utils/helpers';
 import { Button } from '../button/button.js';
 import { Background } from '../background/background.js';
 import { Spacing } from '../spacing/spacing.js';

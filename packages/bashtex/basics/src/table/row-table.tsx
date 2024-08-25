@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { generateUniqueKey } from '../../../../utils';
+import { generateUniqueKey } from '@utils/helpers';
 import styles from './table.module.scss.js';
 import { Row } from './types/row.js';
 import { FlexItem } from '../flex/flex-item.js';

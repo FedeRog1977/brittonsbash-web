@@ -1,4 +1,4 @@
-import { isDefined, toUpperCase } from '../../../../utils';
+import { isDefined, toUpperCase } from '@utils/helpers';
 import { ColumnSpanConfig } from '../types/column-span-config.js';
 
 export const getResponsiveColumnSpanClassNames = (

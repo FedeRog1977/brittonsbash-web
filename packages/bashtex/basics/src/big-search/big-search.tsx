@@ -1,7 +1,7 @@
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FC } from 'react';
-import { generateUniqueKey, isMobile } from '../../../../utils';
+import { generateUniqueKey, isMobile } from '@utils/helpers';
 import { Button } from '../button/button.js';
 import { GridItem } from '../grid/grid-item.js';
 import { Search, SearchProps } from '../search/search.js';
