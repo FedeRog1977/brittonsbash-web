@@ -1,8 +1,8 @@
 import { FC } from 'react';
-import { compileEntries } from './utils/compile-entries';
-import { DataContentResponse } from '../reference';
-import { Flex } from '../flex';
-import { Typography } from '../typography';
+import { compileEntries } from './utils/compile-entries.js';
+import { DataContentResponse } from '../reference/index.js';
+import { Flex } from '../flex/index.js';
+import { Typography } from '../typography/typography.js';
 
 export type ArticlePrefaceProps = {
   entries: DataContentResponse[];

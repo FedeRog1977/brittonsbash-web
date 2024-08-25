@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-import styles from './header.module.scss';
+import styles from './header.module.scss.js';
 import { isMobile, useShowElement } from '../../../../utils';
-import { Flex } from '../../basics';
+import { Flex } from '../flex/flex.js';
 
 export type HeaderMobileProps = {
   funcMobile: () => void;
@@ -11,12 +11,10 @@ export type HeaderMobileProps = {
 };
 
 export const Header = () => {
-  const { showElement: showMobile, setShowElement: setShowMobile } =
-    useShowElement();
-  const { showElement: showBlog, setShowElement: setShowBlog } =
-    useShowElement();
-  const { showElement: showUtilities, setShowElement: setShowUtilities } =
-    useShowElement();
+  // TODO: move to hook
+  const { showElement: showMobile, setShowElement: setShowMobile } = useShowElement();
+  const { showElement: showBlog, setShowElement: setShowBlog } = useShowElement();
+  const { showElement: showUtilities, setShowElement: setShowUtilities } = useShowElement();
 
   const resetHeader = () => {
     setShowBlog(false);
@@ -49,11 +47,7 @@ export const Header = () => {
     <header>
       <div className={styles.header}>
         <div className={styles.headerContent}>
-          <Flex
-            direction="horizontal"
-            alignHorizontal="apart"
-            alignVertical="center"
-          >
+          <Flex direction="horizontal" alignHorizontal="apart" alignVertical="center">
             {isMobile() ? (
               // TODO: make image component
               <img

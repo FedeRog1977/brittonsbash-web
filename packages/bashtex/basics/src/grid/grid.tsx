@@ -1,11 +1,11 @@
 import cx from 'classnames';
 import { FC, ReactNode } from 'react';
-import styles from './grid.module.scss';
+import styles from './grid.module.scss.js';
 import {
   SpacingConfig,
   getResponsiveAlignmentClassNames,
   getResponsiveSpacingClassNames,
-} from '../reference';
+} from '../reference/index.js';
 import { JustifyConfig } from '../reference/types/justify-config.js';
 import { AlignConfig } from '../reference/types/align-config.js';
 

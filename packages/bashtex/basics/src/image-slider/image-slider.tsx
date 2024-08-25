@@ -6,10 +6,10 @@ import {
   faEject,
   faExchange,
 } from '@fortawesome/free-solid-svg-icons';
-import styles from './image-slider.module.scss';
+import styles from './image-slider.module.scss.js';
 import { generateUniqueKey, isMobile } from '../../../../utils';
-import { Typography } from '../../basics';
-import { Img } from '../reference';
+import { Img } from '../reference/index.js';
+import { Typography } from '../typography/typography.js';
 
 export type ImageSliderProps = {
   slides: Img[];

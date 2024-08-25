@@ -1,11 +1,11 @@
 import { toUpperCase } from '../../../../utils';
 import cx from 'classnames';
-import styles from './typography.module.scss';
+import styles from './typography.module.scss.js';
 import ReactMarkdown from 'react-markdown';
 import { createElement, FC } from 'react';
-import { tagMap } from './constants/tag-map';
-import { TextStyle } from '../reference';
-import { enrichMarkdown } from './utils/enrich-markdown';
+import { tagMap } from './constants/tag-map.js';
+import { TextStyle } from '../reference/index.js';
+import { enrichMarkdown } from './utils/enrich-markdown.js';
 
 export type TypographyProps = TextStyle;
 

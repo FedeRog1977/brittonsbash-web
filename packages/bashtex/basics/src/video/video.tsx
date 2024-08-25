@@ -11,8 +11,6 @@ export const Video: FC<VideoProps> = ({ video, controls = false }) => (
     frameBorder="none"
     width="100%"
     height={isMobile() ? '250px' : '750px'}
-    src={`https://www.youtube.com/embed/${video}${
-      controls ? '' : '?controls=0'
-    }`}
+    src={`https://www.youtube.com/embed/${video}${controls ? '' : '?controls=0'}`}
   />
 );

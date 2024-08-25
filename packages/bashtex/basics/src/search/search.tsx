@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import styles from './search.module.scss';
+import styles from './search.module.scss.js';
 
 export type SearchProps = {
   func: (() => void) | ((e: any) => void);
@@ -7,10 +7,5 @@ export type SearchProps = {
 };
 
 export const Search: FC<SearchProps> = ({ func, placeholder }) => (
-  <input
-    type="text"
-    className={styles.search}
-    onChange={func}
-    placeholder={placeholder}
-  />
+  <input type="text" className={styles.search} onChange={func} placeholder={placeholder} />
 );

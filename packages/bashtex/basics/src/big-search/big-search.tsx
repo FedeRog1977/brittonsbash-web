@@ -2,11 +2,12 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FC } from 'react';
 import { generateUniqueKey, isMobile } from '../../../../utils';
-import { Flex, Search, SearchList } from '../../basics';
-import { Button } from '../button';
-import { SearchProps } from '../../basics';
-import { Grid } from '../../basics/grid/grid';
-import { GridItem } from '../../basics/grid/grid-item';
+import { Button } from '../button/button.js';
+import { GridItem } from '../grid/grid-item.js';
+import { Search, SearchProps } from '../search/search.js';
+import { Flex } from '../flex/flex.js';
+import { SearchList } from '../search/search-list.js';
+import { Grid } from '../grid/grid.js';
 
 export type BigSearchProps = {
   funcInput: SearchProps['func'];
@@ -26,11 +27,7 @@ export const BigSearch: FC<BigSearchProps> = ({
   selects,
 }) => (
   <Flex direction="vertical" gap="md">
-    <Grid
-      justifyContent="center"
-      alignItems="center"
-      spacing={{ xs: 'xs', lg: 'md' }}
-    >
+    <Grid justifyContent="center" alignItems="center" spacing={{ xs: 'xs', lg: 'md' }}>
       <GridItem xs={isMobile() ? 8 : 6}>
         <Search func={funcInput} placeholder={placeholder ?? undefined} />
       </GridItem>

@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@bashtex/basics':
+    specifier: 0.0.0
+    version: link:../../bashtex/basics
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -22,9 +25,6 @@ dependencies:
     version: 5.5.4
 
 devDependencies:
-  '@bashtex/basics':
-    specifier: 0.0.0
-    version: link:../../bashtex/basics
   '@config/eslint':
     specifier: 0.0.0
     version: link:../../config/eslint
@@ -8690,7 +8690,7 @@ packages:
     peerDependencies:
       eslint: '*'
       react: '>= 16'
-      typescript: ^3.2.1 || ^4
+      typescript: ^5.0.4
     peerDependenciesMeta:
       typescript:
         optional: true

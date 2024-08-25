@@ -12,25 +12,30 @@
     "build:css": "postcss ./build/css --dir ./build/css-modules --base ./build/css",
     "build:scss": "sass --no-source-map ./src:./build/css",
     "build:ts": "tsc",
-    "clean": "rimraf ./src/**/*.module.scss.ts && rimraf ./build && rimraf ./node_modules",
+    "clean": "rimraf ./src/**/*.module.scss.ts && rimraf ./build && rimraf ./dist && rimraf ./node_modules",
     "format:check": "prettier --ignore-path ./.gitignore --check .",
     "format:repair": "prettier --ignore-path ./.gitignore --list-different --write .",
     "lint": "eslint ./src"
   },
   "dependencies": {
     "classnames": "^2.5.1",
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-lazy-load-image-component": "^1.6.0",
     "react-markdown": "8.0.7",
     "react-router-dom": "^6.5.0",
     "react-scripts": "5.0.1",
-    "typescript": "5.5.4"
+    "typescript": "5.0.4"
   },
   "devDependencies": {
     "@config/eslint": "0.0.0",
     "@config/prettier": "0.0.0",
     "@types/react": "18.2.67",
     "@types/react-dom": "18.3.0",
+    "@types/react-lazy-load-image-component": "^1.6.0",
     "eslint": "8.41.0",
     "npm-run-all": "4.1.5",
     "postcss": "8.4.24",

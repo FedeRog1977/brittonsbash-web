@@ -1,10 +1,13 @@
 import { generateUniqueKey, useShowElement } from '../../../../utils';
-import styles from './image-matrix.module.scss';
+import styles from './image-matrix.module.scss.js';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { Flex, FlexItem, Image, Typography } from '../../basics';
-import { ColumnSpan, Img } from '../reference';
+import { ColumnSpan, Img } from '../reference/index.js';
 import { Modal } from '../../blocks';
 import { FC, useState } from 'react';
+import { FlexItem } from '../flex/flex-item.js';
+import { Flex } from '../flex/flex.js';
+import { Typography } from '../typography/typography.js';
+import { Image } from '../image/image.js';
 
 export type ImageMatrixProps = {
   items: Img[];

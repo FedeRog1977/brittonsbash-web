@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import { TextStyle } from '../reference';
-import { Typography } from '../typography';
+import { TextStyle } from '../reference/index.js';
+import { Typography } from '../typography/typography.js';
 
 export type ArticleProps = {
   sections: TextStyle[];

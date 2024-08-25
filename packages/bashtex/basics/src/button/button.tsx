@@ -1,11 +1,12 @@
-import styles from './button.module.scss';
+import styles from './button.module.scss.js';
 import cx from 'classnames';
 import { toUpperCase } from '../../../../utils';
-import { Flex, Typography } from '../../basics';
 import { FC, ReactElement } from 'react';
-import { TextStyle, Url } from '../reference';
-import { Grid } from '../../basics/grid/grid';
-import { GridItem } from '../../basics/grid/grid-item';
+import { TextStyle, Url } from '../reference/index.js';
+import { Flex } from '../flex/flex.js';
+import { GridItem } from '../grid/grid-item.js';
+import { Grid } from '../grid/grid.js';
+import { Typography } from '../typography/typography.js';
 
 export type ButtonProps = {
   variant?: 'default' | 'clear' | 'solid' | 'inverse';

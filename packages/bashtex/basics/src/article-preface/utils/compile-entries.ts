@@ -1,4 +1,4 @@
-import { DataContentResponse } from '../../reference';
+import { DataContentResponse } from '../../reference/index.js';
 
 type ArticlePrefaceParsed = Pick<DataContentResponse, 'title'> & {
   content: string;

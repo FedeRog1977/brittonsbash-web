@@ -1,8 +1,10 @@
 import { FC } from 'react';
 import { generateUniqueKey } from '../../../../utils';
-import { Flex, FlexItem, Typography } from '../../basics';
-import styles from './table.module.scss';
-import { Row } from './types/row';
+import styles from './table.module.scss.js';
+import { Row } from './types/row.js';
+import { FlexItem } from '../flex/flex-item.js';
+import { Flex } from '../flex/flex.js';
+import { Typography } from '../typography/typography.js';
 
 export type RowTableProps = {
   titleRow: Row;
@@ -40,11 +42,7 @@ export const RowTable: FC<RowTableProps> = ({ titleRow, rows }) => (
           {rows?.map(({ leftItem, rightItem }, index) => {
             if (leftItem && rightItem) {
               return (
-                <Flex
-                  key={generateUniqueKey(index)}
-                  direction="horizontal"
-                  alignHorizontal="apart"
-                >
+                <Flex key={generateUniqueKey(index)} direction="horizontal" alignHorizontal="apart">
                   <FlexItem basis={4}>
                     <Typography variant="footnote" boldFace>
                       {leftItem}
