@@ -1,9 +1,6 @@
-import { ColumnSpan } from '../types';
+import { ColumnSpan } from '../types/column-span.js';
 
-// TODO: find out if this is unused
-export const getColumnSpanForColumnCount = (
-  colCount: 1 | 2 | 3 | 4
-): ColumnSpan => {
+export const getColumnSpanForColumnCount = (colCount: 1 | 2 | 3 | 4): ColumnSpan => {
   if (colCount === 4) {
     return 3;
   }

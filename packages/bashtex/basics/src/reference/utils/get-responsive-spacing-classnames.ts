@@ -1,10 +1,10 @@
 import { isDefined, toUpperCase } from '../../../../utils';
-import { SpacingConfig } from '../types';
+import { SpacingConfig } from '../types/spacing-config.js';
 
 export const getResponsiveSpacingClassNames = (
   prefix: string,
   styles: Record<string, string>,
-  spacingConfig?: SpacingConfig
+  spacingConfig?: SpacingConfig,
 ): string[] => {
   if (!spacingConfig) {
     return [];
@@ -16,9 +16,7 @@ export const getResponsiveSpacingClassNames = (
   return Object.entries(config)
     .map(
       ([breakpoint, spacing]) =>
-        styles[
-          `${prefix}Breakpoint${toUpperCase(breakpoint)}Spacing${toUpperCase(spacing)}`
-        ]
+        styles[`${prefix}Breakpoint${toUpperCase(breakpoint)}Spacing${toUpperCase(spacing)}`],
     )
     .filter(isDefined);
 };
