@@ -65,12 +65,6 @@ module.exports = {
   htmlWhitespaceSensitivity: 'css',
 
   /**
-   * @default false
-   * @type {boolean}
-   */
-  insertPragma: boolean,
-
-  /**
    * @deprecated
    * @default false
    * @type {boolean}

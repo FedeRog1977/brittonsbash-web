@@ -1,6 +1,6 @@
 {
   "name": "root",
-  "description": "Root package of brittonsbash, which orchestrates all child packages",
+  "description": "Root package which orchestrates all child packages",
   "private": true,
   "scripts": {
     "bootstrap": "pnpm install",

@@ -1,40 +1,29 @@
 {
   "homepage": "http://brittonsbash.com",
-  "name": "@application/brittonsbash",
+  "name": "@applications/brittonsbash",
   "description": "Deployable web application of brittonsbash",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "clean": "rimraf ./dist",
-    "clean:hard": "npm run clean && rimraf ./node_modules",
-    "dev": "tsc --watch",
+    "clean": "rimraf ./dist && rimraf ./node_module",
+    "watch": "tsc --watch",
     "format:check": "prettier --ignore-path ./.gitignore --check .",
-    "format:fix": "prettier --ignore-path ./.gitignore --list-different --write .",
-    "git:commit-msg": "commitlint --edit",
+    "format:repair": "prettier --ignore-path ./.gitignore --list-different --write .",
     "lint": "eslint ./src"
   },
   "dependencies": {
     "react": "18.3.0-canary-3bcd2de01-20240227"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.6.3",
-    "@config/commitlint": "0.0.0",
     "@config/eslint": "0.0.0",
     "@config/prettier": "0.0.0",
-    "@config/typescript-react": "0.0.0",
-    "@core/json-schema": "0.0.0",
-    "@core/types": "0.0.0",
-    "@services/validator": "0.0.0",
     "@types/react": "18.2.67",
     "eslint": "8.41.0",
     "prettier": "2.8.8",
     "rimraf": "5.0.1",
     "typescript": "5.0.4"
-  },
-  "commitlint": {
-    "extends": "@config/commitlint"
   },
   "prettier": "@config/prettier"
 }

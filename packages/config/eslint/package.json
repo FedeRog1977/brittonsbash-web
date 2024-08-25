@@ -8,9 +8,9 @@
     ".": "./src/index.js"
   },
   "scripts": {
-    "clean:hard": "rimraf ./node_modules",
+    "clean": "rimraf ./node_modules",
     "format:check": "prettier --ignore-path ./.gitignore --check .",
-    "format:fix": "prettier --ignore-path ./.gitignore --list-different --write .",
+    "format:repair": "prettier --ignore-path ./.gitignore --list-different --write .",
     "list:all": "node ./list-rules.js all",
     "list:enabled": "node ./list-rules.js enabled"
   },
