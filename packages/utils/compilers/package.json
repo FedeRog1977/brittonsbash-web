@@ -1,6 +1,6 @@
 {
-  "name": "@utils/hooks",
-  "description": "Hook utility functions",
+  "name": "@utils/compilers",
+  "description": "Compiler utility functions",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -15,11 +15,13 @@
     "lint": "eslint ./src"
   },
   "dependencies": {
+    "@utils/api": "0.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.5.0",
     "react-scripts": "5.0.1",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "web-vitals": "^2.1.4"
   },
   "devDependencies": {
     "@config/eslint": "0.0.0",
