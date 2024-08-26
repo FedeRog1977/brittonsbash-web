@@ -1,5 +1,5 @@
-// import './components/bash-blocks/reference/styles/_global.scss';
-// import './components/bash-blocks/reference/styles/_fonts.scss';
+import './.style/fonts.scss';
+import './.style/global.scss';
 import { Typography } from '@bashtex/basics/typography'; // TEMP
 import ReactDOM from 'react-dom/client';
 import { HashRouter, Route, Routes } from 'react-router-dom';

@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "clean": "rimraf ./build && rimraf ./node_modules",
+    "clean": "rimraf ./build && rimraf ./dist && rimraf ./node_modules",
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
     "format:check": "prettier --ignore-path ./.gitignore --check .",
@@ -34,7 +34,8 @@
     "eslint": "8.41.0",
     "gh-pages": "^5.0.0",
     "prettier": "2.8.8",
-    "rimraf": "5.0.1"
+    "rimraf": "5.0.1",
+    "sass": "^1.64.1"
   },
   "prettier": "@config/prettier",
   "browserslist": {
