@@ -6,7 +6,7 @@ import styles from './gradient.module.scss.js';
 export type GradientProps = {
   value?: 'light' | 'dark';
   opacity?: 60 | 40 | 20;
-  start?: 'left' | 'right' | 'center';
+  start?: 'left' | 'right';
   fill?: boolean;
 };
 

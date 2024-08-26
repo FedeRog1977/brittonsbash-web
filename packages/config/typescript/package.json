@@ -1,0 +1,21 @@
+{
+  "name": "@config/typescript",
+  "description": "Typescript configuration",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./tsconfig.json"
+  },
+  "scripts": {
+    "clean": "rimraf ./node_modules",
+    "format:check": "prettier --ignore-path ./.gitignore --check .",
+    "format:fix": "prettier --ignore-path ./.gitignore --list-different --write ."
+  },
+  "devDependencies": {
+    "@config/prettier": "0.0.0",
+    "prettier": "2.8.8",
+    "rimraf": "5.0.1"
+  },
+  "prettier": "@config/prettier"
+}
