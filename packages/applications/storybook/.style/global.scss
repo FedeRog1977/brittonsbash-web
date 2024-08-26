@@ -1,5 +1,3 @@
-@use './_index.scss' as reference;
-
 html,
 body,
 div,
@@ -93,7 +91,7 @@ video {
 body {
   margin: 0;
   line-height: 1.25;
-  background-color: reference.$dark-grey;
+  background-color: #282828;
 }
 
 code {
