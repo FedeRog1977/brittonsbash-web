@@ -23,7 +23,7 @@ import { HashRouter, Route, Routes } from 'react-router-dom';
 //   Weather,
 //   Conquest,
 // } from './components';
-// import { reportWebVitals } from './utils/react';
+import { reportWebVitals } from '@utils/react';
 // import { useEvents, useHills, useLinks, useRegions, useSport } from './api';
 
 // const triggerSession = () => {
@@ -35,7 +35,7 @@ import { HashRouter, Route, Routes } from 'react-router-dom';
 // };
 
 // triggerSession();
-// reportWebVitals();
+reportWebVitals();
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 

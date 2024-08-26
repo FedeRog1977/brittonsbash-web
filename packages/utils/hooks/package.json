@@ -10,12 +10,9 @@
   "scripts": {
     "build": "tsc",
     "clean": "rimraf ./dist && rimraf ./node_modules",
-    "eject": "react-scripts eject",
     "format:check": "prettier --ignore-path ./.gitignore --check .",
     "format:repair": "prettier --ignore-path ./.gitignore --list-different --write .",
-    "lint": "eslint ./src",
-    "start": "react-scripts start",
-    "test": "react-scripts test"
+    "lint": "eslint ./src"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",

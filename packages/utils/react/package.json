@@ -1,6 +1,6 @@
 {
-  "name": "@utils/helpers",
-  "description": "Helper utility functions",
+  "name": "@utils/react",
+  "description": "React utility functions",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -22,7 +22,8 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.5.0",
     "react-scripts": "5.0.1",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "web-vitals": "^2.1.4"
   },
   "devDependencies": {
     "@config/eslint": "0.0.0",
