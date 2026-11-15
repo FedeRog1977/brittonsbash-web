@@ -1,13 +1,16 @@
 import { NextResponse } from 'next/server.js';
 
+// @ts-expect-error: this is fine
+import eventData from '../../../../data/events.json'; // with { type:"json" };
+
 export const GET = (): Response => {
   try {
     return NextResponse.json({
       message: 'OK',
       status: 200,
-      //   body: ['2026', '2025', '2024', '2023', '2022', '2021', '2020'],
+      body: Object.keys(eventData),
     });
   } catch (error) {
-    return NextResponse.json({ message: 'Error', status: 500, error });
+    return NextResponse.json({ message: 'Unknown Error', status: 500, error });
   }
 };
